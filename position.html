@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Position</title>
+  <link rel="stylesheet" href="./position.css">
+</head>
+
+<body>
+  <h1>Position</h1>
+
+  <button onclick="toggleDiv('container-static');">Toggle Static</button>
+  <button onclick="toggleDiv('container-relative');">Toggle Relative</button>
+  <button onclick="toggleDiv('container-absolute');">Toggle Absolute</button>
+  <button onclick="toggleDiv('container-fixed');">Toggle Fixed</button>
+  <button onclick="toggleDiv('container-sticky');">Toggle Sticky</button>
+
+  <div class="container" id="container-static">
+    <div class="parent-box">
+      <span class="child-box" style="position: static">
+        I'm Static
+      </span>
+    </div>
+  </div>
+
+  <div class="container" id="container-relative">
+    <div class="parent-box">
+      <span class="child-box" style="position: relative;">
+        I'm Relative (default)
+      </span>
+    </div>
+
+    <div class="parent-box">
+      <span class="child-box" style="position: relative; top: 50px;">
+        I'm Relative (top 50px)
+      </span>
+    </div>
+
+    <div class="parent-box">
+      <span class="child-box" style="position: relative; left: 115px;">
+        I'm Relative (left 115px)
+      </span>
+    </div>
+  </div>
+
+  <div class="container" id="container-absolute">
+    <div class="parent-box">
+      <span class="child-box" style="position: absolute;">
+        I'm Absolute (default)
+      </span>
+    </div>
+
+    <div class="parent-box">
+      <span class="child-box" style="position: absolute; top: 600px;">
+        I'm Absolute (to &lt;html&gt;)
+        </br>
+        top 600px
+      </span>
+    </div>
+
+    <div class="parent-box" style="position: relative" ;>
+      <span class="child-box" style="position: absolute; top: 50px;">
+        I'm Absolute (to the parent)
+        </br>
+        Parent is Absolute/Relative
+        </br>
+        top 50px
+      </span>
+    </div>
+
+    <div class="parent-box" style="position: relative" ;>
+      <span class="child-box" style="position: absolute; left: 10px;">
+        I'm Absolute (to the parent)
+        </br>
+        Parent is Absolute/Relative
+        </br>
+        left 10px
+      </span>
+    </div>
+  </div>
+
+  <div class="container" id="container-fixed">
+    <div class="parent-box">
+      <span class="child-box" style="position: fixed;">
+        I'm Fixed (default)
+      </span>
+    </div>
+  </div>
+
+  <div class="container" id="container-sticky">
+    <div class="parent-box">
+      <span class="child-box" style="position: sticky; position: -webkit-sticky; top: 0;">
+        I'm Sticky (top 0)
+      </span>
+    </div>
+  </div>
+
+  <script src="./position.js"></script>
+</body>
+
+</html>

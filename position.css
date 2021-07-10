@@ -1,0 +1,19 @@
+body{
+  height: 5000px;
+}
+
+.container{
+  display: none;
+}
+
+.parent-box{
+  margin: 5px;
+  width: 200px;
+  height: 200px;
+  border-style: solid;
+}
+
+.child-box{
+  border-style: solid;
+  border-color: red;
+}

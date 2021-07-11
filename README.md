@@ -1,6 +1,8 @@
 ## Web Layout Tutorial
 
-Simple explanation of web layout
+Simple explanation of web layout.
+
+All of these html are tested in Chrome.
 
 ### Contents
 * Display (block & inline)
@@ -8,3 +10,5 @@ Simple explanation of web layout
 * Box Model (border, margin, & padding)
 * Position (static, relative, absolute, fixed, & sticky)
 * Float (none, left, & right)
+* Flexbox
+* Grid

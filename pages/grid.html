@@ -31,21 +31,23 @@
     <div class="item">12</div>
   </div>
 
-  Now let's try changing the grid's item.
+  Now let's try changing the grid's item-3.
   <div class="container"
     style="display: grid; grid-template-rows: 100px 150px 150px 100px; grid-template-columns: 100px 200px 100px; grid-gap: 5px;">
     <div class="item">1</div>
     <div class="item">2</div>
-    <div class="item" style="grid-area: 2 / 2 / 4 / 4;">
+    <div class="item" style="grid-row-start: 2; grid-column-start: 1; grid-row-end: 5; grid-column-end: 3;">
       3
-      </br>
+      </br></br>
       grid-row-start: 2;
       </br>
-      grid-column-start: 2;
+      grid-column-start: 1;
       </br>
-      grid-row-end: 4;
+      grid-row-end: 5;
       </br>
-      grid-column-end: 4;
+      grid-column-end: 3;
+      </br></br>
+      equivalent to grid-area: 2 / 1 / 5 / 3;
     </div>
     <div class="item">4</div>
     <div class="item">5</div>
@@ -56,6 +58,19 @@
     <div class="item">10</div>
     <div class="item">11</div>
     <div class="item">12</div>
+  </div>
+
+  And here's the same concept but using Grid Area instead of row/column line-number
+  <div class="container" style="display: grid;
+  grid-template-areas: 'header header'
+                        'sidebar content'
+                        'footer footer';
+  grid-template-rows: 150px 100px 150px;
+  grid-template-columns: 100px 200px;">
+    <div class="item" style="grid-area: header">header</div>
+    <div class="item" style="grid-area: sidebar">sidebar</div>
+    <div class="item" style="grid-area: content">content</div>
+    <div class="item" style="grid-area: footer">footer</div>
   </div>
   <button onclick="window.location.href='../index.html';">Back</a></button>
 </body>

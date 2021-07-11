@@ -209,13 +209,41 @@
     <h3>All grey items are 75px x 75px</h3>
     Parent's <b>display</b> set to <b>flex</b> & <b>order</b> is set to each item.
     <br>
-    When items are wider than the parent, they will fit in one row.
-    <div class="container-medium" style="display: flex; flex-direction: row;">
+    Items are shown according to the value of order
+    <div class="container-medium" style="display: flex;">
       <span class="item-grey" style="order: 1;">1st item, order 1</span>
       <span class="item-grey" style="order: 1;"">2nd item, order 1</span>
       <span class="item-grey" style="order: -1;"">3rd item, order -1</span>
       <span class="item-grey" style="order: 2;"">4th item, order 2</span>
       <span class="item-grey" style="order: 0;"">5th item, order 0</span>
+    </div>
+
+    Parent's <b>display</b> set to <b>flex</b> & <b>flex-grow</b> is set to each item.
+    <br>
+    Items will grow bigger with bigger flex-grow value, even if the item has their height/width set.
+    <div class="container-medium" style="display: flex;">
+      <span class="item-grey" style="flex-grow: 1;">1</span>
+      <span class="item-grey" style="flex-grow: 2;"">2</span>
+      <span class="item-grey" style="flex-grow: 1;"">1</span>
+    </div>
+
+    Parent's <b>display</b> set to <b>flex</b> & <b>flex-shrink</b> is set to each item.
+    <br>
+    Items will grow smaller with bigger flex-shrink value, shrink will only work if the item dimension is larger than the parent's dimension.
+    <div class="container-medium" style="display: flex;">
+      <span class="item-grey" style="width: 100%;">width 100% </span>
+      <span class="item-grey" style="flex-shrink: 3;">3</span>
+      <span class="item-grey" style="flex-shrink: 1;">1</span>
+      <span class="item-grey" style="flex-shrink: 0;">0</span>
+    </div>
+
+    Parent's <b>display</b> set to <b>flex</b> & <b>flex-basis</b> is set to each item.
+    <br>
+    flex-basis will set the initial size of the flexbox item, even if the item has their height/width set.
+    <div class="container-medium" style="display: flex;">
+      <span class="item-grey" style="flex-basis: 150px;">150px</span>
+      <span class="item-grey" style="flex-basis: 250px;">250px</span>
+      <span class="item-grey" style="flex-basis: 150px;">150px</span>
     </div>
   </div>
   <button onclick="window.location.href='../index.html';">Back</a></button>

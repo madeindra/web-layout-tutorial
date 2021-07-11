@@ -3,10 +3,60 @@
 
 <head>
   <title>Grid</title>
+  <link rel="stylesheet" href="./css/grid.css">
 </head>
 
 <body>
+  <h1>Grid</h1>
+  Parent's <b>display</b> set to <b>grid</b> & <b>grid-gap</b> is set to <b>5px</b>.
+  </br>
+  <b>grid-template-columns</b> is set to <b>100px 200px 100px</b>.
+  </br>
+  <b>grid-template-rows</b> is set to <b>100px 150px 150px 100px</b>.
+  </br>
+  12 items inside grid are made using 12 div
+  <div class="container"
+    style="display: grid; grid-template-rows: 100px 150px 150px 100px; grid-template-columns: 100px 200px 100px; grid-gap: 5px;">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item">4</div>
+    <div class="item">5</div>
+    <div class="item">6</div>
+    <div class="item">7</div>
+    <div class="item">8</div>
+    <div class="item">9</div>
+    <div class="item">10</div>
+    <div class="item">11</div>
+    <div class="item">12</div>
+  </div>
 
+  Now let's try changing the grid's item.
+  <div class="container"
+    style="display: grid; grid-template-rows: 100px 150px 150px 100px; grid-template-columns: 100px 200px 100px; grid-gap: 5px;">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item" style="grid-area: 2 / 2 / 4 / 4;">
+      3
+      </br>
+      grid-row-start: 2;
+      </br>
+      grid-column-start: 2;
+      </br>
+      grid-row-end: 4;
+      </br>
+      grid-column-end: 4;
+    </div>
+    <div class="item">4</div>
+    <div class="item">5</div>
+    <div class="item">6</div>
+    <div class="item">7</div>
+    <div class="item">8</div>
+    <div class="item">9</div>
+    <div class="item">10</div>
+    <div class="item">11</div>
+    <div class="item">12</div>
+  </div>
   <button onclick="window.location.href='../index.html';">Back</a></button>
 </body>
 

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Box Model</title>
+  <link rel="stylesheet" href="./css/box-model.css">
+</head>
+
+<body>
+  <h1>Box Model</h1>
+  
+  <p style="color: black;">Black = Parent's Border</p>
+  <p style="color: red;">Red = Content's Border</p>
+  
+  <div class="container" id="container-static">
+    <div class="parent-box">
+      <div class="child-box">
+        Content
+        </div>
+    </div>
+
+    <div class="parent-box">
+      <div class="child-box" style="padding: 10px;">
+        Content with Padding
+        </div>
+    </div>
+  </div>
+
+  <div class="parent-box">
+    <div class="child-box" style="margin: 10px;">
+      Content with Margin
+      </div>
+  </div>
+</div>
+</body>
+
+</html>

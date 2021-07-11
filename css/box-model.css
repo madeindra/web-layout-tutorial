@@ -1,0 +1,11 @@
+.parent-box{
+  width: 150px;
+  border-color: black;
+  border-style: solid;
+  margin: 10px;
+}
+
+.child-box{
+  border-style: solid;
+  border-color: red;
+}

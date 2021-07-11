@@ -1,0 +1,71 @@
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+.container {
+  margin: 10px;
+  border-style: solid;
+  border-color: black;
+  width: 800px;
+  height: 200px;
+}
+
+.container-small {
+  margin: 10px;
+  border-style: solid;
+  border-color: black;
+  width: 800px;
+  height: 60px;
+}
+
+.container-medium {
+  margin: 10px;
+  border-style: solid;
+  border-color: black;
+  width: 800px;
+  height: 85px;
+}
+
+.container-narrow {
+  margin: 10px;
+  border-style: solid;
+  border-color: black;
+  width: 250px;
+  height: 200px;
+}
+
+.item{
+  width: 200px;
+  height: 50px;
+  margin: 5px;
+  background-color: red;
+}
+
+.item-blue{
+  width: 100px;
+  height: 50px;
+  margin: 5px;
+  background-color: blue;
+}
+
+.item-green{
+  width: 50px;
+  margin: 5px;
+  background-color: green;
+}
+
+.item-grey{
+  width: 75px;
+  height: 75px;
+  margin: 5px;
+  background-color: lightgrey;
+}
+
+#parent-flex {
+  display: none;
+}
+
+#child-flex{
+  display: none;
+}

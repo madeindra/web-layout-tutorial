@@ -3,11 +3,224 @@
 
 <head>
   <title>Flexbox</title>
+  <link rel="stylesheet" href="./css/flexbox.css">
 </head>
 
 <body>
+  <h1>Flexbox</h1>
+  <button onclick="toggleDiv('parent-flex');">Toggle Parent's Flex Property</button>
+  <button onclick="toggleDiv('child-flex');">Toggle Child's Flex Property</button>
+  <div id="parent-flex">
+    <h3>All red items are 200px x 50px</h3>
+    Parent's <b>display</b> set to <b>flex</b> & <b>flex-direction</b> set to <b>row</b>.
+    <br>
+    When items are wider than the parent, they will fit in one row.
+    <div class="container" style="display: flex; flex-direction: row;">
+      <span class="item"></span>
+      <span class="item"></span>
+      <span class="item"></span>
+      <span class="item"></span>
+      <span class="item"></span>
+    </div>
 
+    Parent's <b>display</b> set to <b>flex</b>, <b>flex-direction</b> set to <b>row</b>, <b>flex-wrap</b> set to
+    <b>wrap</b>. This equals to <b>flex-flow</b> set to <b>row wrap</b>
+    <br>
+    With wrap, when items are wider than the parent, they will not fit, but will be shown in other row.
+    <div class="container" style="display: flex; flex-direction: row; flex-wrap: wrap;">
+      <span class="item"></span>
+      <span class="item"></span>
+      <span class="item"></span>
+      <span class="item"></span>
+      <span class="item"></span>
+    </div>
+
+    Parent's <b>display</b> set to <b>flex</b> & <b>flex-direction</b> set to <b>column</b>
+    <br>
+    When items are wider than the parent, they will fit in one column.
+    <div class="container" style="display: flex; flex-direction: column;">
+      <span class="item"></span>
+      <span class="item"></span>
+      <span class="item"></span>
+      <span class="item"></span>
+      <span class="item"></span>
+    </div>
+
+    Parent's <b>display</b> set to <b>flex</b>, <b>flex-direction</b> set to <b>column</b>, <b>flex-wrap</b> set to
+    <b>wrap</b>. This equals to <b>flex-flow</b> set to <b>column wrap</b>
+    <br>
+    With wrap, when items are wider than the parent, they will not fit, but will be shown in other column.
+    <div class="container" style="display: flex; flex-direction: column; flex-wrap: wrap;">
+      <span class="item"></span>
+      <span class="item"></span>
+      <span class="item"></span>
+      <span class="item"></span>
+      <span class="item"></span>
+    </div>
+
+    <h3>All blue items are 100px x 50px</h3>
+
+    Parent's <b>display</b> set to <b>flex</b>, <b>justify-content</b> set
+    to
+    <b>flex-start</b>.
+    <br>
+    justify content is used for aligning item in the main axis.
+    <div class="container-small" style="display: flex; justify-content: flex-start;">
+      <span class="item-blue"></span>
+      <span class="item-blue"></span>
+      <span class="item-blue"></span>
+      <span class="item-blue"></span>
+      <span class="item-blue"></span>
+    </div>
+
+    Parent's <b>display</b> set to <b>flex</b>, <b>justify-content</b> set
+    to
+    <b>flex-end</b>.
+    <br>
+    justify content is used for aligning item in the main axis.
+    <div class="container-small" style="display: flex; justify-content: flex-end;">
+      <span class="item-blue"></span>
+      <span class="item-blue"></span>
+      <span class="item-blue"></span>
+      <span class="item-blue"></span>
+      <span class="item-blue"></span>
+    </div>
+
+    Parent's <b>display</b> set to <b>flex</b>, <b>justify-content</b> set
+    to
+    <b>center</b>.
+    <br>
+    justify content is used for aligning item in the main axis.
+    <div class="container-small" style="display: flex; justify-content: center;">
+      <span class="item-blue"></span>
+      <span class="item-blue"></span>
+      <span class="item-blue"></span>
+      <span class="item-blue"></span>
+      <span class="item-blue"></span>
+    </div>
+
+    Parent's <b>display</b> set to <b>flex</b>, <b>justify-content</b> set
+    to
+    <b>space-between</b>.
+    <br>
+    justify content is used for aligning item in the main axis.
+    <div class="container-small" style="display: flex; justify-content: space-between;">
+      <span class="item-blue"></span>
+      <span class="item-blue"></span>
+      <span class="item-blue"></span>
+      <span class="item-blue"></span>
+      <span class="item-blue"></span>
+    </div>
+
+    Parent's <b>display</b> set to <b>flex</b>, <b>justify-content</b> set
+    to
+    <b>space-around</b>.
+    <br>
+    justify content is used for aligning item in the main axis.
+    <div class="container-small" style="display: flex; justify-content: space-around;">
+      <span class="item-blue"></span>
+      <span class="item-blue"></span>
+      <span class="item-blue"></span>
+      <span class="item-blue"></span>
+      <span class="item-blue"></span>
+    </div>
+
+    Parent's <b>display</b> set to <b>flex</b>, <b>justify-content</b> set
+    to
+    <b>space-evenly</b>.
+    <br>
+    justify content is used for aligning item in the main axis.
+    <div class="container-small" style="display: flex; justify-content: space-evenly;">
+      <span class="item-blue"></span>
+      <span class="item-blue"></span>
+      <span class="item-blue"></span>
+      <span class="item-blue"></span>
+      <span class="item-blue"></span>
+    </div>
+
+    <h3>All green items have width 50px</h3>
+
+    Parent's <b>display</b> set to <b>flex</b>, <b>align-items</b> set
+    to
+    <b>flex-start</b>.
+    <br>
+    align items is used for aligning item in the cross axis.
+    <div class="container-narrow" style="display: flex; align-items: flex-start;">
+      <span class="item-green" style="height: 100px;"></span>
+      <span class="item-green" style="height: 20px;"></span>
+      <span class="item-green" style="height: 50px;"></span>
+      <span class="item-green" style="height: 150px;"></span>
+      <span class="item-green" style="height: 50px;"></span>
+    </div>
+
+    Parent's <b>display</b> set to <b>flex</b>, <b>align-items</b> set
+    to
+    <b>flex-end</b>.
+    <br>
+    align items is used for aligning item in the cross axis.
+    <div class="container-narrow" style="display: flex; align-items: flex-end;">
+      <span class="item-green" style="height: 100px;"></span>
+      <span class="item-green" style="height: 20px;"></span>
+      <span class="item-green" style="height: 50px;"></span>
+      <span class="item-green" style="height: 150px;"></span>
+      <span class="item-green" style="height: 50px;"></span>
+    </div>
+
+    Parent's <b>display</b> set to <b>flex</b>, <b>align-items</b> set
+    to
+    <b>center</b>.
+    <br>
+    align items is used for aligning item in the cross axis.
+    <div class="container-narrow" style="display: flex; align-items: center;">
+      <span class="item-green" style="height: 100px;"></span>
+      <span class="item-green" style="height: 20px;"></span>
+      <span class="item-green" style="height: 50px;"></span>
+      <span class="item-green" style="height: 150px;"></span>
+      <span class="item-green" style="height: 50px;"></span>
+    </div>
+
+    Parent's <b>display</b> set to <b>flex</b>, <b>align-items</b> set
+    to
+    <b>stretch</b>.
+    <br>
+    Stretch will not work on item that have their width or height set, so these items are not using height, and now the items can be stretched.
+    <div class="container-narrow" style="display: flex; align-items: stretch;">
+      <span class="item-green"></span>
+      <span class="item-green"></span>
+      <span class="item-green"></span>
+      <span class="item-green"></span>
+      <span class="item-green"></span>
+    </div>
+
+    Parent's <b>display</b> set to <b>flex</b>, <b>align-items</b> set
+    to
+    <b>baseline</b>.
+    <br>
+    align items is used for aligning item in the cross axis.
+    <div class="container-narrow" style="display: flex; align-items: baseline;">
+      <span class="item-green" style="height: 100px;"></span>
+      <span class="item-green" style="height: 20px;"></span>
+      <span class="item-green" style="height: 50px;"></span>
+      <span class="item-green" style="height: 150px;"></span>
+      <span class="item-green" style="height: 50px;"></span>
+    </div>
+  </div>
+  <div id="child-flex">
+    <h3>All grey items are 75px x 75px</h3>
+    Parent's <b>display</b> set to <b>flex</b> & <b>order</b> is set to each item.
+    <br>
+    When items are wider than the parent, they will fit in one row.
+    <div class="container-medium" style="display: flex; flex-direction: row;">
+      <span class="item-grey" style="order: 1;">1st item, order 1</span>
+      <span class="item-grey" style="order: 1;"">2nd item, order 1</span>
+      <span class="item-grey" style="order: -1;"">3rd item, order -1</span>
+      <span class="item-grey" style="order: 2;"">4th item, order 2</span>
+      <span class="item-grey" style="order: 0;"">5th item, order 0</span>
+    </div>
+  </div>
   <button onclick="window.location.href='../index.html';">Back</a></button>
+
+  <script src="./script/flexbox.js"></script>
 </body>
 
 </html>

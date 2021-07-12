@@ -61,16 +61,28 @@
   </div>
 
   And here's the same concept but using Grid Area instead of row/column line-number
+  </br></br>
+  Parent's <b>grid-template-areas</b> set to
+  </br>
+  'header header'
+  </br>
+  'sidebar content'
+  </br>
+  'footer footer'
+  </br></br>
+  It used for naming three row area & two column area.
+  </br>
+  On the area name above, the header and footer are written twice, it means both row is one cell that span 2 row.
   <div class="container" style="display: grid;
   grid-template-areas: 'header header'
                         'sidebar content'
                         'footer footer';
   grid-template-rows: 150px 100px 150px;
   grid-template-columns: 100px 200px;">
-    <div class="item" style="grid-area: header">header</div>
-    <div class="item" style="grid-area: sidebar">sidebar</div>
-    <div class="item" style="grid-area: content">content</div>
-    <div class="item" style="grid-area: footer">footer</div>
+    <div class="item" style="grid-area: header">grid-area: header</div>
+    <div class="item" style="grid-area: sidebar">grid-area: sidebar</div>
+    <div class="item" style="grid-area: content">grid-area: content</div>
+    <div class="item" style="grid-area: footer">grid-area: footer</div>
   </div>
   <button onclick="window.location.href='../index.html';">Back</a></button>
 </body>
